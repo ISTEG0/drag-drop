@@ -10,6 +10,10 @@ for (const placeholder of placeholders) {
     placeholder.addEventListener('dragenter', dragenter);
     placeholder.addEventListener('dragleave', dragleave);
     placeholder.addEventListener('drop', dragdrop);
+    placeholder.addEventListener('touchstart', dragover);
+    placeholder.addEventListener('touchend', dragenter);
+    placeholder.addEventListener('touchmove', dragleave);
+    placeholder.addEventListener('touchcancel', dragdrop);
 }
 
 
